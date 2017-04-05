@@ -25,10 +25,11 @@
       <div id="contactinfoname">
 
           
-
-          <ul><asp:Label ID="nameLabel" runat="server" Text="Name:"></asp:Label></ul>
-          <ul><asp:TextBox ID="nametxtbox" runat="server"></asp:TextBox></ul>
-          <ul><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter Name" ControlToValidate="nametxtbox"></asp:RequiredFieldValidator></ul>
+          <ul>
+          <li><asp:Label ID="nameLabel" runat="server" Text="Name:"></asp:Label></li>
+          <li><asp:TextBox ID="nametxtbox" runat="server"></asp:TextBox></li>
+          <li><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter Name" ControlToValidate="nametxtbox"></asp:RequiredFieldValidator></li>
+          </ul>
 
       </div>
           
@@ -36,50 +37,51 @@
 
 
        <div id="contactinfoemail">
-
-          <ul><asp:Label ID="emailLabel" runat="server" Text="Email:"></asp:Label></ul>
-          <ul><asp:TextBox ID="emailtxtbox" runat="server"></asp:TextBox></ul>
-          <ul><asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Please Enter Valid Email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="emailtxtbox"></asp:RegularExpressionValidator></ul>
-
+          <ul>
+          <li><asp:Label ID="emailLabel" runat="server" Text="Email:"></asp:Label></li>
+          <li><asp:TextBox ID="emailtxtbox" runat="server"></asp:TextBox></li>
+          <li><asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Please Enter Valid Email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="emailtxtbox"></asp:RegularExpressionValidator></li>
+           </ul>
       </div>
 
           <p>&nbsp;</p>
 
 
       <div id="contactinfotopic">
-
-          <ul><asp:Label ID="topicLabel" runat="server" Text="Topic:"></asp:Label></ul>
-          <ul><asp:TextBox ID="topictxtbox" runat="server"></asp:TextBox></ul>
-          <ul><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter Topic" ControlToValidate="topictxtbox"></asp:RequiredFieldValidator></ul>
-
-      </div>
+<ul>
+          <li><asp:Label ID="topicLabel" runat="server" Text="Topic:"></asp:Label></li>
+          <li><asp:TextBox ID="topictxtbox" runat="server"></asp:TextBox></li>
+          <li><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter Topic" ControlToValidate="topictxtbox"></asp:RequiredFieldValidator></li>
+</ul>      </div>
 
           <p>&nbsp;</p>
 
 
 
       <div id="contactinfomessage">
-
-          <ul><asp:Label ID="messageLabel" runat="server" Text="Message:"></asp:Label></ul>
-          <ul><asp:TextBox ID="messagetextbox" runat="server" TextMode="MultiLine" ></asp:TextBox></ul>
-          <ul><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please Enter Message" ControlToValidate="messagetextbox"></asp:RequiredFieldValidator></ul>
-
+          <ul>
+          <li><asp:Label ID="messageLabel" runat="server" Text="Message:"></asp:Label></li>
+          <li><asp:TextBox ID="messagetextbox" runat="server" TextMode="MultiLine" ></asp:TextBox></li>
+          <li><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please Enter Message" ControlToValidate="messagetextbox"></asp:RequiredFieldValidator></li>
+          </ul>
       </div>
 
          <p>&nbsp;</p>
 
 
       <div id="submitbtn">
-
-          <ul><asp:Button ID="submitbtn_click" runat="server" Text="Submit Message" OnClick="submitbtn_click_Click" /></ul>
+<ul>
+          <li><asp:Button ID="submitbtn_click" runat="server" Text="Submit Message" OnClick="submitbtn_click_Click" /></li>
+</ul>     
 
       </div>
 
     
 
       <div id="resultarea">
-
-          <ul><asp:Label ID="litResult" runat="server"></asp:Label></ul>
+<ul>
+          <li><asp:Label ID="litResult" runat="server"></asp:Label></li>
+</ul>      
 
       </div>
       </div>
