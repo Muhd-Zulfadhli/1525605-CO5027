@@ -20,7 +20,7 @@
     <div class="table2">
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
-                <asp:AdRotator ID="AdRotator1" runat="server" width="1000px" Height="400px" AdvertisementFile="~/Slider.xml" AlternateTextField="slider" /> <!--all images came from google images-->
+                <asp:AdRotator ID="AdRotator1" runat="server" width="1000px" Height="400px" AdvertisementFile="~/Slider.xml" /> <!--all images came from google images-->
                 <asp:Timer ID="Timer1" runat="server" Interval="2500"></asp:Timer>
             </ContentTemplate>
 
@@ -33,4 +33,5 @@
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
+
 </asp:Content>

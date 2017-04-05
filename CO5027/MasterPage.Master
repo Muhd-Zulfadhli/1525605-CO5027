@@ -35,7 +35,7 @@
     <div>
     <div id="wrapper">
     <div id="banner">
-    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/tv.jpg"  Height="300" alt="imagemain" Width="1100" />
+    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/tv.jpg" Width="100%" Height="300" />
     </div>
     <div id="navigation">
     <ul id="nav">
@@ -70,7 +70,7 @@
         <p>Copyright &copy; 2017 meTV</p>
 
         </div>
-
+        <!--template footer ends here-->
 
     </form>
 
