@@ -1,0 +1,139 @@
+﻿/* body (learned codes from w3school) */
+body 
+{
+    color: #574c3f;
+    font-family: Corbel, Arial, Helvetica, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: aquamarine;   
+}
+
+
+/* p (learned codes from w3school) */
+p 
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* legend (learned codes from w3school) */
+legend
+{
+font-style: italic;
+}
+
+
+/* fieldset (learned codes from w3school) */
+fieldset
+{
+    border: 1px solid;
+    width: 300px;
+    margin: auto;
+}
+
+
+/* wrapper (learned codes from w3school) */
+#wrapper 
+{
+    width: 1100px;
+    margin: auto;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+
+/* table (learned codes from w3school) */
+.table
+{
+    text-align: left;
+    font-style: italic;
+}
+
+
+.table2
+{
+    text-align: center;    
+}
+
+
+#banner 
+{
+   
+}
+
+
+/* navigation (learned codes from w3school) */
+#navigation 
+{
+     height: 45px;
+    background: linear-gradient(to top, #c2bcb5, #ffffff);
+}
+
+
+#nav 
+{
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+
+
+#nav ul 
+{
+    display: none;
+    list-style: none;
+}
+
+
+#nav li 
+{
+    float: left;
+    display: block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    padding: 0px 20px 0px 20px;
+    border-left: 1px solid #ffffff;
+}
+
+#nav a:link, #nav a:visited, #nav a:active 
+{
+    display: block;
+    color: #574c3f;
+    text-decoration: none;
+}
+
+
+#nav a:hover 
+{
+    background-color: white;
+}
+
+
+#content 
+{
+    
+}
+
+
+/* map-canvas (learned codes from w3school) */
+#map-canvas{
+    width: 900px;
+    height: 400px;
+    margin: auto;    
+}
+
+
+/* footer (learned codes from w3school) */
+#footer { overflow:hidden; clear:both; background-color:silver; padding:10px 0px; width:1100px; margin:auto; }
+
+#footer p { float:left; text-align:center; color:black; padding:0px 30px 0px 0px; }
+
+
+
+
+
+
+
+
+
