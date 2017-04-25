@@ -5,14 +5,14 @@
     
 
 
-     <p>&nbsp;</p>
-
-
-
-      
-       <p>Contact Us</p>
-
-     <p>&nbsp;</p>
+     <br />
+    <div class="fieldset2"><p>Contact Us</p></div>
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
 
 
       <!--codes for contact form starts here-->
@@ -20,7 +20,7 @@
           <legend>Info</legend>
       <div class="table">
 
-        <p>&nbsp;</p>
+        <br />
 
       <div id="contactinfoname">
 
@@ -33,7 +33,7 @@
 
       </div>
           
-          <p>&nbsp;</p>
+          <br />
 
 
        <div id="contactinfoemail">
@@ -44,7 +44,7 @@
            </ul>
       </div>
 
-          <p>&nbsp;</p>
+          <br />
 
 
       <div id="contactinfotopic">
@@ -54,7 +54,7 @@
           <li><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter Topic" ControlToValidate="topictxtbox"></asp:RequiredFieldValidator></li>
 </ul>      </div>
 
-          <p>&nbsp;</p>
+          <br />
 
 
 
@@ -66,7 +66,7 @@
           </ul>
       </div>
 
-         <p>&nbsp;</p>
+         <br />
 
 
       <div id="submitbtn">
@@ -84,20 +84,18 @@
 </ul>      
 
       </div>
-      </div>
 
-        </fieldset>      
+
+      </div>
+      </fieldset>    
+    
 
     <!--codes for contact form ends here-->
 
 
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
+   
 
-       <p>Google Map</p>
-    <p>&nbsp;</p>
+      
 
 
   
@@ -165,11 +163,9 @@
           
     <!--script for google map ends here--> 
 
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-
+    
+    <div style="clear: both"></div>
+    <div class="table4"></div>
     
 
      

@@ -41,10 +41,10 @@
     <ul id="nav">
     <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Homepage</asp:HyperLink></li>
     <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink></li>
-    <li><asp:HyperLink ID="HyperLink3" runat="server">Login</asp:HyperLink></li>
-    <li><asp:HyperLink ID="HyperLink4" runat="server">Products</asp:HyperLink></li>
-    <li><asp:HyperLink ID="HyperLink5" runat="server">About</asp:HyperLink></li>
-               
+    <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li>
+    <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Products.aspx">Products</asp:HyperLink></li>
+    <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Pages/Admin/Admin.aspx">Admin</asp:HyperLink></li>
+              
     </ul>
 
 
