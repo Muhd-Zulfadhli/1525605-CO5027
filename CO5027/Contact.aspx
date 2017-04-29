@@ -41,7 +41,8 @@
           <li><asp:Label ID="emailLabel" runat="server" Text="Email:"></asp:Label></li>
           <li><asp:TextBox ID="emailtxtbox" runat="server"></asp:TextBox></li>
           <li><asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Please Enter Valid Email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="emailtxtbox"></asp:RegularExpressionValidator></li>
-           </ul>
+          <li><asp:RequiredFieldValidator runat="server" ErrorMessage="Please Enter Valid Email" ID="rfv1" ControlToValidate="emailtxtbox"></asp:RequiredFieldValidator></li>
+          </ul>
       </div>
 
           <br />

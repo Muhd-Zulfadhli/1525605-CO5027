@@ -21,7 +21,7 @@ namespace CO5027.Pages
             smtpClient.Port = 587;
 
             //create credentials - e.g. username and password for the account
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("ohmyg2wd@gmail.com", "biteu2death");
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("ohmyg2wd@gmail.com", "zulfadhli");
             smtpClient.Credentials = credentials;
 
 

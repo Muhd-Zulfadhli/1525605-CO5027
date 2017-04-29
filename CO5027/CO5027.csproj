@@ -155,6 +155,8 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Global.asax" />
+    <Content Include="Images\1tv.png" />
+    <Content Include="Images\2tv.png" />
     <Content Include="Images\Products\S1.jpg" />
     <Content Include="Images\Products\S2.jpg" />
     <Content Include="Images\Products\S3.jpg" />

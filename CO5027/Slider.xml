@@ -1,17 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Advertisements>
   <Ad>
-    <ImageUrl>Images/tv2.jpg</ImageUrl>
+    <ImageUrl>Images/1tv.png</ImageUrl>
   </Ad>
   <Ad>
-    <ImageUrl>Images/tv3.jpg</ImageUrl>
+    <ImageUrl>Images/2tv.png</ImageUrl>
   </Ad>
-  <Ad>
-    <ImageUrl>Images/tv4.jpg</ImageUrl>
-  </Ad>
-  <Ad>
-    <ImageUrl>Images/tv5.jpg</ImageUrl>
-  </Ad>
+  
   
   
   

@@ -31,13 +31,13 @@ namespace CO5027.Pages.Admin {
         protected global::System.Web.UI.WebControls.GridView grdProducts;
         
         /// <summary>
-        /// sdsProducts control.
+        /// tvProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource sdsProducts;
+        protected global::System.Web.UI.WebControls.SqlDataSource tvProducts;
         
         /// <summary>
         /// LinkButton2 control.
@@ -58,12 +58,12 @@ namespace CO5027.Pages.Admin {
         protected global::System.Web.UI.WebControls.GridView grdProductTypes;
         
         /// <summary>
-        /// sdsProductTypes control.
+        /// tvProductType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource sdsProductTypes;
+        protected global::System.Web.UI.WebControls.SqlDataSource tvProductType;
     }
 }
