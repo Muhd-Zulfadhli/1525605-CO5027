@@ -97,8 +97,63 @@ namespace CO5027.App_Code.Models
 
         }
 
+        public List<Cart> GetOrdersInCart(string userId)
+        {
+            meTVEntities db = new meTVEntities();
+            List<Cart> orders = (from x in db.Carts
+                                 where x.ClientID == userId && x.IsInCart
+                                 orderby x.DatePurchased
+                                 select x).ToList();
 
+            return orders;
+
+        }
         
+        public int GetAmountOfOrders(string userId)
+        {
+            try
+            {
+                meTVEntities db = new meTVEntities();
+                int amount = (from x in db.Carts
+                              where x.ClientID == userId && x.IsInCart
+                              select x.Amount).Sum();
+
+                return amount;
+            }
+            catch
+            {
+                return 0;
+            }
+    
+        }
+
+
+        public void UpdateQuantity(int id, int quantity)
+        {
+            meTVEntities db = new meTVEntities();
+            Cart cart = db.Carts.Find(id);
+            cart.Amount = quantity;
+
+            db.SaveChanges();
+        }
+
+        public void MarkOrdersAsPaid(List<Cart> carts)
+        {
+            meTVEntities db = new meTVEntities();
+
+            if(carts != null)
+            {
+                foreach(Cart cart in carts)
+                {
+                    Cart oldCart = db.Carts.Find(cart.ID);
+                    oldCart.DatePurchased = DateTime.Now;
+                    oldCart.IsInCart = false;
+                }
+
+                db.SaveChanges();
+
+            }
+        }
 
     }
 }
