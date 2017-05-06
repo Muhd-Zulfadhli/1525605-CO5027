@@ -12,7 +12,7 @@
 
 
 
-        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Pages/Admin/AdminProducts.aspx" CssClass="button">Add new Product</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Pages/Admin/AdminProducts.aspx">Add new Product</asp:LinkButton>
 
 
 

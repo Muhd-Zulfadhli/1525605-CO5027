@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity;
 
 namespace CO5027.Pages
 {
@@ -47,5 +48,38 @@ namespace CO5027.Pages
 
             }
         }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(Request.QueryString["id"]))
+            {
+                string clientId = Context.User.Identity.GetUserId();
+
+                if (clientId != null)
+                {
+
+                    int id = Convert.ToInt32(Request.QueryString["id"]);
+                    int amount = Convert.ToInt32(ddlAmount.SelectedValue);
+
+                    Cart cart = new Cart
+                    {
+                        Amount = amount,
+                        ClientID = clientId,
+                        DatePurchased = DateTime.Now,
+                        IsInCart = true,
+                        ProductID = id
+                    };
+
+                    CartModel model = new CartModel();
+                    lblResult.Text = model.InsertCart(cart);
+                }
+                else
+                {
+                    lblResult.Text = "Please, log in!";
+                }
+            }
+        }
+
+
     }
 }

@@ -7,6 +7,26 @@ namespace CO5027.App_Code.Models
 {
     public class CartModel
     {
+        public string InsertCart(Cart cart)
+        {
+            try
+            {
+                meTVEntities db = new meTVEntities();
+                db.Carts.Add(cart);
+                db.SaveChanges();
+
+                return "Order was succesfully inserted";
+            }
+            catch (Exception e)
+            {
+                return "Error:" + e;
+            }
+        }
+
+
+
+
+
         public string InsertProductType(Cart cart)
         {
             try
@@ -78,7 +98,7 @@ namespace CO5027.App_Code.Models
         }
 
 
-
+        
 
     }
 }

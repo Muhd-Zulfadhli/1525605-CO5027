@@ -12,11 +12,12 @@
 
         <tr>
             <td>
-                <asp:Label ID="lblDescription" runat="server" Text=""></asp:Label></td></tr>
+                <asp:Label ID="lblDescription" runat="server"></asp:Label></td></tr>
            <tr> <td>
-                <asp:Label ID="lblPrice" runat="server" Text=""></asp:Label></td>
+                <asp:Label ID="lblPrice" runat="server"></asp:Label></td>
             <td>Quantity :
-            <asp:DropDownList ID="ddlAmount" runat="server"></asp:DropDownList>
+            <asp:DropDownList ID="ddlAmount" runat="server"></asp:DropDownList><br />
+                <asp:Button ID="btnAdd" runat="server" Text="Add Product" CssClass="button" OnClick="btnAdd_Click" /><br />
             <asp:Label ID="lblResult" runat="server" Text=""></asp:Label></td>
         </tr>
 
