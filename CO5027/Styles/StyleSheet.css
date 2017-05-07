@@ -241,6 +241,35 @@ fieldset
 }
 
 
+.CartTable 
+{
+    text-align: center;
+    border: 15px solid black;
+    margin-bottom: 10px;
+    width: 100%;
+    padding:10px;
+}
+
+
+.CartTable input
+{
+    width: 70px;
+    height: 70px;
+}
+
+
+.CartTable h4
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+.CartTable tr td select
+{
+    width: 100px;
+}
+
 
 /* footer (learned codes from w3school) */
 #footer { overflow:hidden; clear:both; background-color:silver; padding:10px 0px; width:1100px; margin:auto; }

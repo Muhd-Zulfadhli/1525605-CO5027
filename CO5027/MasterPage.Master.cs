@@ -4,8 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
-
+using CO5027.App_Code.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.Owin.Security;
 
 
 namespace CO5027
@@ -18,13 +19,18 @@ namespace CO5027
 
             if (user.IsAuthenticated)
             {
-                litStatus.Text = Context.User.Identity.Name;
+                
 
                 lnkLogin.Visible = false;
                 lnkRegister.Visible = false;
 
-                lnkLogout.Visible = true;
+                btnLogout.Visible = true;
                 litStatus.Visible = true;
+
+                CartModel model = new CartModel();
+                string userId = HttpContext.Current.User.Identity.GetUserId();
+                litStatus.Text = string.Format("{0} ({1})", Context.User.Identity.Name,
+                    model.GetAmountOfOrders(userId));
 
             }
             else
@@ -32,7 +38,7 @@ namespace CO5027
                 lnkLogin.Visible = true;
                 lnkRegister.Visible = true;
 
-                lnkLogout.Visible = false;
+                btnLogout.Visible = false;
                 litStatus.Visible = false;
             }
         }

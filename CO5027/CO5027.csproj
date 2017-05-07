@@ -191,6 +191,8 @@
     <Content Include="Pages\Admin\AdminProducts.aspx" />
     <Content Include="Pages\Admin\AdminProductTypes.aspx" />
     <Content Include="Pages\ListProducts.aspx" />
+    <Content Include="Pages\ShopCart.aspx" />
+    <Content Include="Pages\Success.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -330,6 +332,20 @@
     </Compile>
     <Compile Include="Pages\ListProducts.aspx.designer.cs">
       <DependentUpon>ListProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShopCart.aspx.cs">
+      <DependentUpon>ShopCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ShopCart.aspx.designer.cs">
+      <DependentUpon>ShopCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Success.aspx.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Success.aspx.designer.cs">
+      <DependentUpon>Success.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
