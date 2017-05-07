@@ -54,7 +54,8 @@ namespace CO5027.Pages
                 ImageButton btnImage = new ImageButton
                 {
                     ImageUrl = string.Format("~/Images/Products/{0}", product.Image),
-                    PostBackUrl = string.Format("~/Products.aspx?id={0}", product.Id)
+                    CssClass = "productImage",
+                PostBackUrl = string.Format("~/Products.aspx?id={0}", product.Id)
                 };
 
                 //This is to create a delete link
