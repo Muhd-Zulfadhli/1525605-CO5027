@@ -2,6 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <!--Website created using tools and techniques taught in the module CO5027-->
+    <!--All images from Google Images-->
+    <!--CSS codes used seperately from Styles folder-->
+
     <br />
     <div class="fieldset2"><p>Administration</p></div>
     <br />
@@ -11,13 +16,15 @@
 
 
 
-
+        <!--This is a link to go to AdminProducts.aspx to add a new product-->
         <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Pages/Admin/AdminProducts.aspx">Add new Product</asp:LinkButton>
 
-
-
-
         <br />
+
+
+        <!--This is a gridview of created products using details from database which can be updated or deleted-->
+
+        <!--starts here-->
         <asp:GridView ID="grdProducts" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="tvProducts" AllowPaging="True" AllowSorting="True" Width="100%">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -49,12 +56,24 @@
                 <asp:Parameter Name="Id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+        <!--ends here-->
+
+
         <br />
 
+
+
+
+
+        <!--This is a link to go to AdminProductTypes.aspx to add a new product type-->
         <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Pages/Admin/AdminProductTypes.aspx">Add new ProductType</asp:LinkButton>
 
-
         <br />
+
+
+        <!--This is a gridview of created product types using details from database which can be updated or deleted-->
+
+        <!--starts here-->
         <asp:GridView ID="grdProductTypes" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="tvProductType" Width="100%">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -76,6 +95,7 @@
                 <asp:Parameter Name="Id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+        <!--ends here-->
 
 
         </div>

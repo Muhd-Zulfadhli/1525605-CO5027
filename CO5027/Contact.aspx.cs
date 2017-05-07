@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Net.Mail;
 
+//Website created using tools and techniques taught in the module CO5027
+
 namespace CO5027.Pages
 {
     public partial class Contact : System.Web.UI.Page

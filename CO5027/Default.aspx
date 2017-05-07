@@ -6,7 +6,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
-  
+  <!--Website created using tools and techniques taught in the module CO5027-->
+  <!--All images from Google Images-->
+  <!--CSS codes used seperately from Styles folder-->
    
    <div class="table5"></div>
    

@@ -1,4 +1,8 @@
-﻿/* body (learned codes from w3school) */
+﻿/*Website created using tools and techniques taught in the module CO5027*/
+/*CSS codes used here to connect to other aspx pages*/
+/*Codes also learned from w3school*/
+
+/* body (learned codes from w3school) */
 body 
 {
     color: #574c3f;
@@ -34,6 +38,7 @@ fieldset
 }
 
 
+/* fieldset2 (learned codes from w3school) */
 .fieldset2
 {
     border: 1px solid;
@@ -60,28 +65,35 @@ fieldset
 }
 
 
+/* table2 (learned codes from w3school) */
 .table2
 {
     text-align: center;    
 }
 
+
+/* table3 p (learned codes from w3school) */
 .table3 p 
 {
     text-align: left;
 }
 
 
+/* table4 (learned codes from w3school) */
 .table4
 {
     height: 100px;
 }
 
 
+/* table5 (learned codes from w3school) */
 .table5
 {
     height: 30px;
 }
 
+
+/* table6 (learned codes from w3school) */
 .table6
 {
     float:right;
@@ -102,6 +114,7 @@ fieldset
 }
 
 
+/* nav (learned codes from w3school) */
 #nav 
 {
     display: block;
@@ -110,6 +123,7 @@ fieldset
 }
 
 
+/* nav ul (learned codes from w3school) */
 #nav ul 
 {
     display: none;
@@ -117,6 +131,7 @@ fieldset
 }
 
 
+/* nav li (learned codes from w3school) */
 #nav li 
 {
     float: left;
@@ -127,6 +142,8 @@ fieldset
     border-left: 1px solid #ffffff;
 }
 
+
+/* nav a:link, #nav a:visited, #nav a:active (learned codes from w3school) */
 #nav a:link, #nav a:visited, #nav a:active 
 {
     display: block;
@@ -135,12 +152,14 @@ fieldset
 }
 
 
+/* nav a:hover (learned codes from w3school) */
 #nav a:hover 
 {
     background-color: white;
 }
 
 
+/* content (learned codes from w3school) */
 #content 
 {
     padding: 30px;
@@ -149,7 +168,8 @@ fieldset
 
 
 /* map-canvas (learned codes from w3school) */
-#map-canvas{
+#map-canvas
+{
     width: 700px;
     height: 575px;
     
@@ -157,7 +177,9 @@ fieldset
 }
 
 
-#ContentPlaceHolder1_pnlProducts div {
+/* ContentPlaceHolder1_pnlProducts div (learned codes from w3school) */
+#ContentPlaceHolder1_pnlProducts div 
+{
     float: left;
     width: 510px;
     height: 300px;
@@ -166,7 +188,9 @@ fieldset
 }
 
 
-.inputs {
+/* inputs (learned codes from w3school) */
+.inputs 
+{
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     background-color: #EAEAEA;
@@ -179,7 +203,10 @@ fieldset
     width: 260px;
 }
 
-.inputs:focus {
+
+/* inputs:focus (learned codes from w3school) */
+.inputs:focus 
+{
     background: #FFF;
     -webkit-box-shadow: 0 0 25px #CCC;
     -moz-box-shadow: 0 0 25px #ccc;
@@ -187,6 +214,7 @@ fieldset
 }
 
 
+/* productName (learned codes from w3school) */
 .productName
 {
     font-size: 20px;
@@ -195,6 +223,7 @@ fieldset
 }
 
 
+/* productPrice (learned codes from w3school) */
 .productPrice
 {
     font-size: 15px;
@@ -203,6 +232,7 @@ fieldset
 }
 
 
+/* productImage (learned codes from w3school) */
 .productImage
 {
     width: 150px;
@@ -215,6 +245,7 @@ fieldset
 }
 
 
+/* productImage3 (learned codes from w3school) */
 .productImage3
 {
     width: 500px;
@@ -227,6 +258,7 @@ fieldset
 }
 
 
+/* button (learned codes from w3school) */
 .button 
 {
     padding: 10px;
@@ -241,6 +273,7 @@ fieldset
 }
 
 
+/* CartTable (learned codes from w3school) */
 .CartTable 
 {
     text-align: center;
@@ -251,6 +284,7 @@ fieldset
 }
 
 
+/* CartTable input (learned codes from w3school) */
 .CartTable input
 {
     width: 70px;
@@ -258,6 +292,7 @@ fieldset
 }
 
 
+/* CartTable h4 (learned codes from w3school) */
 .CartTable h4
 {
     padding: 0;
@@ -265,6 +300,7 @@ fieldset
 }
 
 
+/* CartTable tr td select (learned codes from w3school) */
 .CartTable tr td select
 {
     width: 100px;
@@ -274,6 +310,8 @@ fieldset
 /* footer (learned codes from w3school) */
 #footer { overflow:hidden; clear:both; background-color:silver; padding:10px 0px; width:1100px; margin:auto; }
 
+
+/* footer p (learned codes from w3school) */
 #footer p { float:left; text-align:center; color:black; padding:0px 30px 0px 0px; }
 
 

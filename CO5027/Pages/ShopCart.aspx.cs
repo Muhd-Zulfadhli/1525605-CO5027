@@ -8,6 +8,8 @@ using Microsoft.AspNet.Identity;
 using CO5027.App_Code.Models;
 using CO5027.App_Code;
 
+//Website created using tools and techniques taught in the module CO5027
+
 namespace CO5027.Pages
 {
     public partial class ShopCart : System.Web.UI.Page
@@ -144,6 +146,7 @@ namespace CO5027.Pages
 
         private void ddlAmount_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Codes for DropDownList
             DropDownList selectedList = (DropDownList)sender;
             int quantity = Convert.ToInt32(selectedList.SelectedValue);
             int cartId = Convert.ToInt32(selectedList.ID);
@@ -156,6 +159,7 @@ namespace CO5027.Pages
 
         private void Delete_Product(object sender, EventArgs e)
         {
+            //Codes for delete button
             LinkButton selectedLink = (LinkButton)sender;
             string link = selectedLink.ID.Replace("del", "");
             int cartId = Convert.ToInt32(link);

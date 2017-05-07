@@ -7,6 +7,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+//Website created using tools and techniques taught in the module CO5027
+
 namespace CO5027
 {
     public partial class Products : System.Web.UI.Page
@@ -19,6 +21,7 @@ namespace CO5027
 
         public void FillPage()
         {
+            //This is to gets list of all products
             ProductModel productModel = new ProductModel();
             List<Product> products = productModel.GetAllProducts();
 
@@ -30,9 +33,13 @@ namespace CO5027
                     ImageButton imageButton = new ImageButton();
                     Label lblName = new Label();
                     Label lblPrice = new Label();
-
-
+                  
+                    //Info from database about products are places onto this page
+                    //This includes product image, name and price
+                    //All images from Google Images
                     imageButton.ImageUrl = "~/Images/Products/" + product.Image;
+
+                    //Selected product image is clickable to an individual page
                     imageButton.CssClass = "productImage";
                     imageButton.PostBackUrl = "~/Pages/ListProducts.aspx?id=" + product.Id;
 

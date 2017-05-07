@@ -2,13 +2,22 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="table3">
-    <p>Name:</p> 
-    <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+
+    <!--Website created using tools and techniques taught in the module CO5027-->
+    <!--All images from Google Images-->
+    <!--CSS codes used seperately from Styles folder-->
+
+
+        <div class="table3">
+
+        <!--This is to insert product name-->
+        <p>Name:</p> 
+        <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
         <br />
 
 
-    <p>Type:</p>
+        <!--This is to insert product type-->
+        <p>Type:</p>
         <p>
             <asp:DropDownList ID="ddlType" runat="server" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="Id">
             </asp:DropDownList>
@@ -16,23 +25,34 @@
         </p>
         <br />
 
+
+        <!--This is to insert product price-->
         <p>Price:</p>
         <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
         <br />
        
-
+        
+        <!--This is to insert product image-->
         <p>Image:</p>
         <asp:DropDownList ID="ddlImage" runat="server">
         </asp:DropDownList>
         <br />
         
+
+        <!--This is to insert product description-->
         <p>Description:</p>
         <p>
             <asp:TextBox ID="txtDescription" runat="server" TextMode="MultiLine"></asp:TextBox>
         </p>
+
+
+        <!--This is to submit the product to Products.aspx page-->
         <p>
             <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
         </p>
+
+
+        <!--This is to inform successfully inserted product-->
         <p>
             <asp:Label ID="lblResult" runat="server"></asp:Label>
         </p>

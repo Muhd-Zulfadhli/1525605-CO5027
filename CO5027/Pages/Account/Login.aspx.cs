@@ -8,6 +8,8 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
+//Website created using tools and techniques taught in the module CO5027
+
 namespace CO5027.Pages.Account
 {
     public partial class Login : System.Web.UI.Page
@@ -19,6 +21,7 @@ namespace CO5027.Pages.Account
 
         protected void btnLogIn_Click(object sender, EventArgs e)
         {
+            //Codes for log in button
             UserStore<IdentityUser> userStore = new UserStore<IdentityUser>();
 
             userStore.Context.Database.Connection.ConnectionString =

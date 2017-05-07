@@ -9,6 +9,8 @@ using System.Web.UI.WebControls;
 using CO5027.App_Code.Models;
 using CO5027.App_Code;
 
+//Website created using tools and techniques taught in the module CO5027
+
 namespace CO5027.Pages.Admin
 {
     public partial class AdminProducts : System.Web.UI.Page
@@ -50,6 +52,7 @@ namespace CO5027.Pages.Admin
 
         public Product CreateProduct()
         {
+            //Details of products connects to database
             Product product = new Product();
             product.Name = txtName.Text;
             product.Price = Convert.ToInt32(txtPrice.Text);
@@ -64,6 +67,7 @@ namespace CO5027.Pages.Admin
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            //Codes for submit button
             ProductModel productModel = new ProductModel();
             Product product = CreateProduct();
 

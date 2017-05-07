@@ -8,6 +8,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 
+//Website created using tools and techniques taught in the module CO5027
+
 namespace CO5027.Pages
 {
     public partial class ListProducts : System.Web.UI.Page
@@ -51,6 +53,7 @@ namespace CO5027.Pages
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
+            //Codes to add into user's shopping cart
             if (!string.IsNullOrWhiteSpace(Request.QueryString["id"]))
             {
                 string clientId = Context.User.Identity.GetUserId();

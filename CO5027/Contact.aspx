@@ -3,7 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-
+    <!--Website created using tools and techniques taught in the module CO5027-->
+    <!--All images from Google Images-->
+    <!--CSS codes used seperately from Styles folder-->
 
      <br />
     <div class="fieldset2"><p>Contact Us</p></div>
@@ -108,7 +110,9 @@
 
 
     <!--script for google map starts here-->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJocihmXXsvBzyoEZAnM7xKatanVSWMXg&libraries=places"></script>
+
+    <!--using my own created google map api-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJocihmXXsvBzyoEZAnM7xKatanVSWMXg&libraries=places"></script>
 
           <script>
 
