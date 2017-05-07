@@ -8,6 +8,7 @@ using CO5027.App_Code.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
+//Website created using tools and techniques taught in the module CO5027
 
 namespace CO5027
 {
@@ -15,6 +16,7 @@ namespace CO5027
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //This is for user name visible
             var user = Context.User.Identity;
 
             if (user.IsAuthenticated)
@@ -45,6 +47,7 @@ namespace CO5027
 
         protected void lnkLogout_Click(object sender, EventArgs e)
         {
+            //Codes for log out button
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
             authenticationManager.SignOut();
 
