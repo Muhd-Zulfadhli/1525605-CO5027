@@ -19,7 +19,7 @@
 
 
         <br />
-
+        <br />
         <!--This is to inform successfully inserted product type-->
         <asp:Label ID="lblResult" runat="server"></asp:Label>
 
