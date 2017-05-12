@@ -170,7 +170,5 @@ namespace CO5027.Pages
             Response.Redirect("~/Pages/ShopCart.aspx");
         }
 
-
-
-    }
+        }
 }
